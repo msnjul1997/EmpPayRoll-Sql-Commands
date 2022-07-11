@@ -28,4 +28,6 @@ public class EmpMySqlTest {
     SELECT MIN(salary) from employee_payroll where gender = "M" group by gender;
     SELECT MAX(salary) from employee_payroll where gender = "M" group by gender;
     SELECT COUNT(salary) from employee_payroll where gender = "M" group by gender;
+
+    ALTER TABLE employee_payroll add column department varchar(20);
 }
