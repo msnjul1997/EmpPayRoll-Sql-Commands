@@ -30,4 +30,8 @@ public class EmpMySqlTest {
     SELECT COUNT(salary) from employee_payroll where gender = "M" group by gender;
 
     ALTER TABLE employee_payroll add column department varchar(20);
+
+    ALTER TABLE employee_payroll add column Basic_Pay int, add column
+    Deductions int,add column Taxable_Pay int,add column
+    Income_Tax int,add column Net_Pay int;
 }
