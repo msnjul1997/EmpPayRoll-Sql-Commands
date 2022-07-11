@@ -4,4 +4,11 @@ public class EmpMySqlTest {
     create database EmpPayRoll_Sql_Commands;
     show databases;
     use EmpPayRoll_Sql_Commands;
+
+    create table employee_payroll(
+            id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+            name varchar(25),
+    salary INT,
+    start_date DATE NOT NULL
+    );
 }
