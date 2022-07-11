@@ -11,4 +11,6 @@ public class EmpMySqlTest {
     salary INT,
     start_date DATE NOT NULL
     );
+
+    insert into employee_payroll(name,salary,start_date) values("Kittu",400000,"22-11-22");
 }
