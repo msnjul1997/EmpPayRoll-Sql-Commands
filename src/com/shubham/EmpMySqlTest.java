@@ -13,4 +13,8 @@ public class EmpMySqlTest {
     );
 
     insert into employee_payroll(name,salary,start_date) values("Kittu",400000,"22-11-22");
+    insert into employee_payroll(name,salary,start_date) values("Santhosh",600000,"20-00-02");
+
+    SELECT * FROM employee_payroll where name = "Santhosh";
+    SELECT * FROM employee_payroll where start_date BETWEEN cast("2011-04-01" AS DATE) AND DATE(now());
 }
